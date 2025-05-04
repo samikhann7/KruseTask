@@ -1,0 +1,209 @@
+body{
+  background-color: #000000;
+  font-family:'Montserrat', sans-serif;
+  color: #1DCD9F;
+  
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.title{
+  /* justify-content: left; */
+  text-align: left;
+  margin:2rem;
+  font-size: x-large;
+  font-weight: bolder;
+}
+
+.Users{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100vw;
+}
+.addUserBtn{
+  justify-content: space-between;
+  margin:2rem;
+  border-width: 0;
+  width: 20rem;
+  height: 20rem;
+  padding:1rem;
+  word-wrap: break-word;
+  transition: transform 500ms ease;
+}
+
+.addUserBtn .icon {
+  color: rgb(112, 109, 109); /* default color */
+  transition: color 0.3s ease;
+}
+
+.addUserBtn:hover .icon {
+  color: #121213; /* color on hover */
+}
+
+.User{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* pushes upper and lower apart */
+  margin: 2rem;
+  border-width: 0;
+  width: 20rem;
+  height: 20rem;
+  padding: 1rem;
+  word-wrap: break-word;
+  transition: transform 500ms ease;
+}
+
+
+.User:hover, .addUserBtn:hover{
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.lower{
+  margin-top: auto;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.deleteBtn{ 
+  background-color: #83130f;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+  margin:0 .5rem;
+  outline: none;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.deleteBtn:hover,
+.deleteBtn:focus {
+  background-color: #dd1212;
+}
+.updateBtn{ 
+  background-color: #169976;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+  margin:0 .5rem;
+  outline: none;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+.updateBtn a {
+  text-decoration: none;
+  color: inherit; /* Optional: makes link text match the button text color */
+}
+
+.addUserBtn a {
+  text-decoration: none;
+  color: inherit; /* Optional: makes link text match the button text color */
+}
+
+.updateBtn:hover,
+.updateBtn:focus {
+  background-color: #1DCD9F;
+}
+
+.edit{
+  position: relative;
+  left:40vw;
+}
+
+.editTitle{
+  text-align: left;
+  margin:2rem 5.5rem;
+  font-size: x-large;
+  font-weight: bolder;
+}
+.editForm{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 15vw;
+  margin: 2rem;
+  /* border: 2px solid red; */
+}
+.displayElements{
+  font-size: large;
+  margin: 1rem 0rem;
+}
+
+.formElement{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  margin:1.5rem 0rem;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
