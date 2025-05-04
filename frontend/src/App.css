@@ -32,20 +32,22 @@ body{
   justify-content: space-between;
   margin:2rem;
   border-width: 0;
-  width: 20rem;
-  height: 20rem;
+  width: 22rem;
+  height: 22rem;
   padding:1rem;
   word-wrap: break-word;
   transition: transform 500ms ease;
+  background-color: #222222;
 }
 
 .addUserBtn .icon {
   color: rgb(112, 109, 109); /* default color */
-  transition: color 0.3s ease;
+  transition: transform 0.3s ease;
 }
 
 .addUserBtn:hover .icon {
-  color: #121213; /* color on hover */
+  color: white; /* color on hover */
+  transform: rotate(90deg);
 }
 
 .User{
@@ -59,8 +61,25 @@ body{
   padding: 1rem;
   word-wrap: break-word;
   transition: transform 500ms ease;
+  background-color: #222222;
 }
 
+.User .upper {
+  display: flex;
+  flex-direction: column ;
+}
+.User .upper .container{
+  display: flex;
+  flex-direction: row ;
+}
+.dataElements {
+  font-size: large;
+  margin: 1rem 0rem;
+  color:white;
+  white-space: normal;
+  max-width: 100%;
+  overflow: hidden;
+}
 
 .User:hover, .addUserBtn:hover{
   cursor: pointer;
@@ -167,7 +186,8 @@ body{
 }
 .displayElements{
   font-size: large;
-  margin: 1rem 0rem;
+  font-weight: bold;
+  margin: 1rem .5rem;
 }
 
 .formElement{

@@ -13,13 +13,18 @@ const User = (props) => {
             console.log(err);
         }
     }
-    const colors=['#222222'];
   return (
-    <div className='User' style={{backgroundColor:colors[props.id%colors.length]}}>
+    <div className='User'>
         <div className="upper">
-            <div className='displayElements'>Name: {props.name}</div>
-            <div className='displayElements'>Age: {props.age}</div>
-            <div className='displayElements'>Email: {props.email}</div>
+            <div className="container">
+                <div className='displayElements'>Name: </div><div className='dataElements'>{props.name}</div>
+            </div>
+            <div className="container">
+                <div className='displayElements'>Age: </div><div className='dataElements'> {props.age}</div>
+            </div>
+            <div className="container">
+                <div className='displayElements'>Email: </div><div className='dataElements'> {props.email}</div>
+            </div>
         </div>
 
         <div className="lower">
