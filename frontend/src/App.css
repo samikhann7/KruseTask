@@ -1,7 +1,7 @@
 body{
-  background-color: #000000;
+  background-color: #f4ecd8;
   font-family:'Montserrat', sans-serif;
-  color: #1DCD9F;
+  color: black;
   
 }
 
@@ -37,7 +37,7 @@ body{
   padding:1rem;
   word-wrap: break-word;
   transition: transform 500ms ease;
-  background-color: #222222;
+  background-color: white;
 }
 
 .addUserBtn .icon {
@@ -45,8 +45,40 @@ body{
   transition: transform 0.3s ease;
 }
 
+/* CSS */
+/* .button-1 {
+  background-color: #EA4C89;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  outline: none;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+} */
+
+/* .button-1:hover,
+.button-1:focus {
+  background-color: #F082AC;
+} */
 .addUserBtn:hover .icon {
-  color: white; /* color on hover */
+  color: black; /* color on hover */
   transform: rotate(90deg);
 }
 
@@ -75,7 +107,7 @@ body{
 .dataElements {
   font-size: large;
   margin: 1rem 0rem;
-  color:white;
+  color:black;
   white-space: normal;
   max-width: 100%;
   overflow: hidden;
@@ -94,7 +126,7 @@ body{
 }
 
 .deleteBtn{ 
-  background-color: #83130f;
+  background-color: #EA4C89;
   border-radius: 8px;
   border-style: none;
   box-sizing: border-box;
@@ -122,7 +154,7 @@ body{
 
 .deleteBtn:hover,
 .deleteBtn:focus {
-  background-color: #dd1212;
+  background-color: #F082AC;
 }
 .updateBtn{ 
   background-color: #169976;

@@ -20,13 +20,13 @@ const UserList = () => {
         }
         fetchAllUsers();
     },[])
-
+    const colors=['#779ba1','#d6a780','#897a74'];
   return (
       <>
         <div className="title">User List</div>
         <div className='Users'>
-            {users.map(user=>(
-                <User  key={user.id} {...user} setUsers={setUsers}></User>
+            {users.map((user,idx)=>(
+                <User backgroundColor={colors[idx%colors.length]}  key={user.id} {...user} setUsers={setUsers}></User>
             ))}
             <button className='addUserBtn' onClick={()=>{navigate("/add")}}><FontAwesomeIcon className='icon' size='4x' icon={faPlus} /></button>
             

@@ -14,7 +14,7 @@ const User = (props) => {
         }
     }
   return (
-    <div className='User'>
+    <div className='User' style={{backgroundColor:props.backgroundColor}}>
         <div className="upper">
             <div className="container">
                 <div className='displayElements'>Name: </div><div className='dataElements'>{props.name}</div>
