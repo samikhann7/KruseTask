@@ -1,1 +1,2 @@
 # KurveTask
+# Kurve-Kiosks-Task
